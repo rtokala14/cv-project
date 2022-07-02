@@ -8,8 +8,7 @@ class Display extends React.Component {
   render() {
     return (
       <div>
-        <p>Display also works.</p>
-        <p>Text: {this.props.data.try}</p>
+        <p>{`${this.props.data.general.fName}`}</p>
       </div>
     );
   }

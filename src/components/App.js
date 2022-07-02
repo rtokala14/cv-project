@@ -6,22 +6,30 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      try: "",
+      general: {
+        fName: "",
+        lName: "",
+        title: "",
+        email: "",
+        phone: "",
+      },
+      skills: [],
+      experience: {},
     };
 
-    this.formSubmit = this.formSubmit.bind(this);
+    this.uGeneral = this.uGeneral.bind(this);
   }
 
-  formSubmit = (name) => {
+  uGeneral = (data) => {
     this.setState({
-      try: name,
+      general: data,
     });
   };
 
   render() {
     return (
       <div>
-        <Form data="Test" onSubmit={this.formSubmit} />
+        <Form uGeneral={this.uGeneral} />
         <Display data={this.state} />
       </div>
     );
