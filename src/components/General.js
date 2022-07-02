@@ -46,40 +46,42 @@ class General extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.submitChange} id="generalForm">
-        <h2 id="inputHeading">Personal Information</h2>
-        <input
-          type="text"
-          id="generalFirstName"
-          onChange={this.handleChangeF}
-          placeholder="First Name"
-        ></input>
-        <input
-          type="text"
-          id="generalLasttName"
-          onChange={this.handleChangeL}
-          placeholder="Last Name"
-        ></input>
-        <input
-          type="text"
-          onChange={this.handleChangeT}
-          id="generalTitle"
-          placeholder="Title"
-        ></input>
-        <input
-          type="text"
-          onChange={this.handleChangeE}
-          id="generalEmail"
-          placeholder="Email"
-        ></input>
-        <input
-          type="text"
-          onChange={this.handleChangeP}
-          id="generalPhone"
-          placeholder="Phone Number"
-        ></input>
-        <button type="submit">Add</button>
-      </form>
+      <div className="container">
+        <form onSubmit={this.submitChange} id="generalForm">
+          <h2 id="inputHeading">Personal Information</h2>
+          <input
+            type="text"
+            id="generalFirstName"
+            onChange={this.handleChangeF}
+            placeholder="First Name"
+          ></input>
+          <input
+            type="text"
+            id="generalLasttName"
+            onChange={this.handleChangeL}
+            placeholder="Last Name"
+          ></input>
+          <input
+            type="text"
+            onChange={this.handleChangeT}
+            id="generalTitle"
+            placeholder="Title"
+          ></input>
+          <input
+            type="text"
+            onChange={this.handleChangeE}
+            id="generalEmail"
+            placeholder="Email"
+          ></input>
+          <input
+            type="text"
+            onChange={this.handleChangeP}
+            id="generalPhone"
+            placeholder="Phone Number"
+          ></input>
+          <button type="submit">Add</button>
+        </form>
+      </div>
     );
   }
 }
