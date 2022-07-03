@@ -64,6 +64,17 @@ class Display extends React.Component {
 
         <div>
           <h2 className="resume-title">education</h2>
+          <div className=" p-3">
+            {data.education.map((value, i) => {
+              return (
+                <div className=" mb-2">
+                  <h3 className=" font-bold">{value.degree}</h3>
+                  <h4 className=" font-medium">{value.university}</h4>
+                  <p className=" text-sm text-gray-500">{value.timeline}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );
