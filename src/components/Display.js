@@ -10,14 +10,18 @@ class Display extends React.Component {
 
     return (
       <div className="container flex flex-col gap-3">
-        <div className="flex justify-between gap-6 items-center">
-          <div className=" flex flex-col" id="general-left">
-            <h2>{data.general.fName}</h2>
-            <h4>{data.general.title}</h4>
+        <div className="flex justify-between gap-6 p-3 items-center">
+          <div className=" flex flex-col w-2/3" id="general-left">
+            <h2 className=" text-3xl text-blue-600 font-medium">
+              {data.general.fName} {data.general.lName}
+            </h2>
+            <h4 className=" text-sm text-gray-600 mb-2">
+              {data.general.title}
+            </h4>
             <p className=" whitespace-normal flex-wrap">{data.general.blurb}</p>
           </div>
           <div id="general-right">
-            <ul className="flex flex-col justify-around items-end">
+            <ul className="flex flex-col justify-around items-end gap-2">
               <li>{data.general.email}</li>
               <li>{data.general.phone}</li>
               <li>{data.general.location}</li>
