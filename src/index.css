@@ -5,3 +5,11 @@
 .container {
     @apply border border-black border-2 rounded-lg p-4
 }
+
+.resume-title {
+    @apply uppercase text-xl border-t-2 border-b-2 border-sky-500 text-center font-semibold
+}
+
+.skill-item {
+    @apply p-2 rounded-md bg-teal-600 text-white
+}

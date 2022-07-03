@@ -10,10 +10,12 @@ class App extends React.Component {
         fName: "John",
         lName: "Doe",
         title: "Business Development Manager",
-        email: "john.doe@gmai.com",
+        email: "john.doe@gmail.com",
         phone: "202-555-0166",
+        location: "New York, USA",
+        linkedin: "linkedin.com/in/john.doe",
         blurb:
-          "alsdkjfkmsclksdjldsknvsdajfsdkljflkdsnvclkdsnklcsdjflksdjlkvndlksjlfjklsdjklfjklsdjgklsdjlkvjnlkdsnklcndslkfjkldsjfkldsjlkcnsdklnvklnsdlkjflkdsjklnlkvdskljfkljsdklfj",
+          "alsdkjfk msclks djldsknvsd ajfs dkljflkdsnv clk dsnklcs djflksd jlk v nd lksj lfjkl s djklfj k lsdjg k lsdjl kvjnlkds nklcndslkfjkl dsjfklds jlkcnsdklnvklns dlk jflkdsjkln lkvd sklj fkljsdk lfj",
       },
       skills: [
         "SEO",
