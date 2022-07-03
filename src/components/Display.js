@@ -39,25 +39,27 @@ class Display extends React.Component {
           </ul>
         </div>
 
-        <div className=" p-3">
+        <div className="">
           <h2 className="resume-title">experience</h2>
-          {data.experience.map((value, i) => {
-            return (
-              <div>
-                <h3 className=" font-bold">{value.title}</h3>
-                <h4 className=" font-medium">{value.company}</h4>
-                <div className=" flex justify-between">
-                  <p className=" text-sm text-gray-500">{value.timeline}</p>
-                  <p className=" text-sm text-gray-500">{value.location}</p>
+          <div className=" p-3">
+            {data.experience.map((value, i) => {
+              return (
+                <div className=" mb-2">
+                  <h3 className=" font-bold">{value.title}</h3>
+                  <h4 className=" font-medium">{value.company}</h4>
+                  <div className=" flex justify-between">
+                    <p className=" text-sm text-gray-500">{value.timeline}</p>
+                    <p className=" text-sm text-gray-500">{value.location}</p>
+                  </div>
+                  <ul className=" list-disc pl-6">
+                    {value.bullets.map((val, i) => {
+                      return <li>{val}</li>;
+                    })}
+                  </ul>
                 </div>
-                <ul className=" list-disc pl-6">
-                  {value.bullets.map((val, i) => {
-                    return <li>{val}</li>;
-                  })}
-                </ul>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
 
         <div>

@@ -40,7 +40,7 @@ class App extends React.Component {
           bullets: [
             "aksdfjdslkvnkdfljglksdjglksnlhajsdflkdksgjlkdjsalfkljsgjdklsjldsjflkgjlkdsjfld",
             "asdlgjdslkvjlkdsjfdlkmvcdslkfjkdklvsdbvdnsklfkjhsdlkfjlkdsjvlknkdsnlvnklsdnlkvndlsk",
-            "sdfklcmksdlavjlkd jkdlmvcldsjjsdljclkmmclksdl f jdskflj ",
+            "sdfklcmksdlavjlkd jkdlmvcldsjjsdljclkmmclksdl f jdskflj alsdkjfk msclks djldsknvsd ajfs dkljflkdsnv clk dsnklcs djflksd jlk v nd lksj lfjkl s djklfj k lsdjg k lsdjl  ",
           ],
         },
         {
