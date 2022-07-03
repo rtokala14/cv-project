@@ -46,9 +46,15 @@ class General extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <form onSubmit={this.submitChange} id="generalForm">
-          <h2 id="inputHeading">Personal Information</h2>
+      <div className=" container">
+        <h2 className=" text-xl font-bold mb-2" id="inputHeading">
+          Personal Information
+        </h2>
+        <form
+          onSubmit={this.submitChange}
+          className="flex flex-wrap gap-2"
+          id="generalForm"
+        >
           <input
             type="text"
             id="generalFirstName"

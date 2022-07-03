@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-    @apply border border-black border-2 rounded-lg p-4 lg:w-1/2
+    @apply border border-black border-2 rounded-lg p-4 lg:w-auto
 }
 
 .resume-title {
@@ -12,4 +12,12 @@
 
 .skill-item {
     @apply p-2 rounded-md bg-teal-600 text-white
+}
+
+input[type="text"] {
+    @apply border-2 border-black rounded-md p-1
+}
+
+button[type="submit"] {
+    @apply text-center border-black border-2 rounded-md p-1 w-36
 }

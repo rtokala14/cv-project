@@ -7,10 +7,6 @@ class Form extends React.Component {
     super(props);
   }
 
-  /*updateGeneral = (inData) => {
-    this.props.uGeneral(inData);
-  };*/
-
   render() {
     return (
       <div>

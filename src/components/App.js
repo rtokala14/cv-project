@@ -75,7 +75,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="flex flex-col gap-6 p-8 lg:flex-row justify-evenly items-center">
+      <div className="flex flex-col gap-6 p-8 lg:flex-row items-center">
         <Form uGeneral={this.uGeneral} />
         <Display data={this.state} />
       </div>
